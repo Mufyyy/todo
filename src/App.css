@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+  color:#fff;
+}
+
+/* todoField */
+
+.todoField{
+  display: flex;
+  align-items: center;
+}
+.todoField .todoField_btn{
+  color:#fff;
+  background-color: coral;
+  border: 0;
+  height: 35px;
+  cursor: pointer;
+}
+.todoField .todoField_input{
+  height:35px;
+  padding:0 10px ;
+  border:0;
+  outline: 0;
+}
+
+
+/*todos*/
+
+.todos{
+  list-style-type: none;
+  padding: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+.todos::-webkit-scrollbar{
+  width: 5px;
+  background-color: coral;
+}
+.todos::-webkit-scrollbar-thumb{
+  background-color: #eee;
+}
+.todos .todos__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.todos .todos__text {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.todos .todos__text .todos__text--done{
+  text-decoration: line-through;
+  color:#ccc;
+}
+.todos .todos__buttons button {
+  margin-left:10px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
